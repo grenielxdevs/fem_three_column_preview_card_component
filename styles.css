@@ -2,6 +2,98 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --white-opaque: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    max-width: 300px;
+    padding: 50px 30px;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card h2 {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: var(--very-light-gray);
+}
+
+.card p {
+    min-height: 150px;
+    margin: 20px 0 40px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--white-opaque);
+}
+
+.card a {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card:first-child {
+    border-radius: 8px 0 0 8px;
+    background-color: var(--bright-orange);
+}
+
+.card:first-child a {
+    color: var(--bright-orange);
+}
+
+.card:nth-child(2) {
+    border-radius: 0;
+    background-color: var(--dark-cyan);
+}
+
+.card:nth-child(2) a {
+    color: var(--dark-cyan);
+}
+
+.card:last-child {
+    border-radius: 0 8px 8px 0;
+    background-color: var(--very-dark-cyan);
+}
+
+.card:last-child a {
+    color: var(--very-dark-cyan);
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
